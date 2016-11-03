@@ -13,7 +13,7 @@
 #' @references Section 4.4.8. of Rosenbaum PR (2002) Observational Studies, 2nd Edition.
 #' @examples  data("Telemedicine.matchedsample") # Reading in the data produced by a matching method
 #'
-#' sensSurv(data=Telemedicince,exp="Telehealth",outcome="Graftstatus",failtime="failtimetxp",Gamma=1.5,alpha =0.05,Gammainterval=0.01)
+#' sensSurv(data=Telemedicince.matchedsample,exp="Telehealth",outcome="Graftstatus",failtime="failtimetxp",Gamma=1.5,alpha =0.05,Gammainterval=0.01)
 
 sensSurv = function(data, exp, outcome, failtime,Gamma,alpha,Gammainterval) {
   results = list()
